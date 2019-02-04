@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<title>Chris J Herman</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Lato", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../static/2nd_background.png");
+  min-height: 35%;
+}
+
+.data {
+  display: none;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="/" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="/data_work" class="w3-button w3-block w3-black">DATA <span class="w3-hide-small">WORK</span></a>
+    </div>
+    <div class="w3-col s3">
+      <a href="/contact" class="w3-button w3-block w3-black">CONTACT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="https://s3.amazonaws.com/chermsbucket/Chris+J+Herman+Resume.pdf" class="w3-button w3-block w3-black">RESUME</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-padding-large w3-wide w3-text-dark-grey w3-center">
+    <h1 class="w3-hide-small w3-xxxlarge">CHRIS HERMAN</h1>
+    <h3 class="w3-hide-small">DATA & INSIGHTS</h3>
+    <h5 class="w3-hide-medium w3-hide-large" style="white-space:nowrap">CHRIS HERMAN</h5>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+
+
+
+<!-- About Container -->
+  <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+    <h5 class="w3-center">DATA PRODUCTS</h5>
+  </div>
+  <div class="w3-content" id="content">
+
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+  <div class="w3-col m6 w3-padding-large">
+   <img src="../static/dogdentifier.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+  </div>
+
+  <div class="w3-col m6 w3-padding-large">
+    <h1 class="w3-center">Dog-dentifier Project</h1><br>
+    <h5 class="w3-center">Predicting a Dogs Breed and Recommending the Best Fit</h5>
+    <p class="w3-large">For this project I used a Convolutional Neural Network (CNN) to predict dogs breeds from their photos.  If you upload multiple photos, you can fill out a survey and use a content-based recommender system to help find which dog best fits your needs!</p>
+    <p class="w3-large w3-text-grey w3-hide-medium">I had an absolute blast making this project and learned a lot about neural nets, flask and web scraping in the process</p>
+    <i class="fa fa-github fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i><a href="https://github.com/cjherman6/capstone">Link to Project</a><br>
+    <i class="fa fa-globe fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i><a href="http://www.dog-dentifier.com:5000">Link to Website</a><br>
+  </div>
+</div>
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-32 w3-margin-top w3-opacity w3-hover-opacity-off">
+  <div class="w3-xlarge w3-section">
+    <a href="http://www.github.com/cjherman6"><i class="fa fa-github w3-hover-opacity"></i></a>
+    <a href="http://www.linkedin.com/in/chris-j-herman"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    <a href="mailto:cjherman6@gmail.com"><i class="fa fa-envelope"></i></a>
+  </div>
+</footer>
+
+<script>
+// Tabbed data
+function opendata(evt, dataName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("data");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(dataName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>

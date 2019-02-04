@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<title>Chris J Herman</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Lato", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../static/2nd_background.png");
+  min-height: 35%;
+}
+
+.data {
+  display: none;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="/" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="/data_work" class="w3-button w3-block w3-black">DATA <span class="w3-hide-small">WORK</span></a>
+    </div>
+    <div class="w3-col s3">
+      <a href="/contact" class="w3-button w3-block w3-black">CONTACT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="https://s3.amazonaws.com/chermsbucket/Chris+J+Herman+Resume.pdf" class="w3-button w3-block w3-black">RESUME</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-padding-large w3-wide w3-text-dark-grey w3-center">
+    <h1 class="w3-hide-small w3-xxxlarge">CHRIS HERMAN</h1>
+    <h5 class="w3-hide-medium w3-hide-large" style="white-space:nowrap">CHRIS HERMAN</h5>
+    <h3 class="w3-hide-small">DATA & INSIGHTS</h3>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+
+
+
+<!-- About Container -->
+  <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+    <h5 class="w3-center">CONTACT</h5>
+  </div>
+  <div class="w3-content w3-container" id="contact">
+
+    <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+    <div class="w3-row w3-padding-32 w3-section">
+      <div class="w3-col m4 w3-container">
+        <img src="https://www.w3schools.com/w3images/map.jpg" class="w3-image w3-round" style="width:100%">
+      </div>
+      <div class="w3-col m8 w3-panel">
+        <div class="w3-large w3-margin-bottom">
+          <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: cjherman6@gmail.com<br>
+          <i class="fa fa-linkedin fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> LinkedIn: <a href="http://www.linkedin.com/in/chris-j-herman">linkedin.com/in/chris-j-herman</a><br>
+          <i class="fa fa-github fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> GitHub: <a href="http://www.github.com/cjherman6">github.com/cjherman6</a><br>
+          <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phoenix, AZ<br>
+        </div>
+        <p>Shoot me an email if you'd like to talk, or grab a cup of <i class="fa fa-coffee"></i>!</p>
+      </div>
+    </div>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-32 w3-opacity w3-hover-opacity-off">
+  <div class="w3-xlarge w3-section">
+    <a href="http://www.github.com/cjherman6"><i class="fa fa-github w3-hover-opacity"></i></a>
+    <a href="http://www.linkedin.com/in/chris-j-herman"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    <a href="mailto:cjherman6@gmail.com"><i class="fa fa-envelope"></i></a>
+  </div>
+</footer>
+
+<script>
+// Tabbed data
+function opendata(evt, dataName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("data");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(dataName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
